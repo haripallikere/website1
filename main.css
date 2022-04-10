@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.company__navwrapper {
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1rem;
+    z-index: 10;
+}
+
+.company__navigation {
+    /* margin-inline: 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company__navigation--links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+    a:focus-visible {
+    outline: 4px solid red;
+}
+
+.logo {
+    margin: 0.5rem;
+    width: clamp(.5rem, 10vw, 5.5rem);
+    display: grid;     
+    place-items: center;
+}
+
+.company__navigation--links a {
+    text-decoration: none;
+}
+
+.nav-btn {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-btn > a {
+    text-transform: uppercase;
+}
+
+.btn--menu {
+    display: none;
+}
+
+
+/* main  */
+.company__heading {
+    top: 1rem;
+    position: absolute;
+    z-index: 100000;
+    margin: 2rem  0;
+    text-align: center;
+}
+.company__main {
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.company__images {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+    position: relative;
+    top:0;
+    display: grid;
+    place-items: center;
+}
+
+.company__images--background {
+    /* border: 1px solid red; */
+    top: 7rem;
+    margin: 0 auto;
+    position: absolute;
+    max-height: 90%;
+    max-width: 90%;
+    z-index: 100;
+    /* overflow: hidden; */
+}
+.backgound-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-position: 0 -15rem;
+}
+
+.company__images--employee {
+    /* border: 1px solid red; */
+    max-height: 50%;
+    max-width: 20%;
+    position: absolute;
+    z-index: 1000;
+    top: 25rem;
+    right: calc(50% + 2rem);
+    overflow: hidden;
+
+}
+
+.company__images--employee--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 5px;
+}
+
+.company__image--content {
+    padding: min(1rem,4rem);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    z-index: 1000;
+    top: 25rem;
+    left: calc(50% + 2rem);
+    background-color: aliceblue;
+    overflow: auto;
+}
+
+.company__image--content  p {
+    font-weight: 500;
+    font-size: max(1.5rem,.5rem);
+    line-height: max(1.7rem,.5rem);
+}
+
+
+

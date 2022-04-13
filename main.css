@@ -413,6 +413,13 @@
     gap: 2rem;
 }
 
+.company__section--team--details img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
 .company__section--team--details h1 {
     font-weight: 900;
     font-size: 2rem;

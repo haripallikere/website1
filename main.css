@@ -394,7 +394,6 @@
 .company__section--team {
     height: 60vh;
     display: flex;
-    /* text-align: center; */
     grid-template-columns: 1fr 1fr;
 }
 
@@ -412,7 +411,6 @@
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    /* padding: 1rem; */
 }
 
 .company__section--team--details h1 {
@@ -420,10 +418,11 @@
     font-size: 2rem;
 }
 
+
 .company__section--team--details--btn {
+    padding: 1rem;
     margin: 0 auto;
     width: 30%;
-    height: 10%;
     border: 2px solid gray;
     color: gray;
     background-color: transparent;

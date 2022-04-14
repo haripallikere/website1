@@ -399,14 +399,13 @@ body {
 /* company__section--team */
 
 .company__section--team {
-    /* height: 60vh; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
 }
 
 .company__section--team--map {
-    /* background-color: aqua; */
+    padding: 2rem;
     height: 100%;
     width: 100%;
 }
